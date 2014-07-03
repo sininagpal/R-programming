@@ -1,4 +1,0 @@
-R-programming
-=============
-
-practice codes
