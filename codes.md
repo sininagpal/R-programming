@@ -45,3 +45,23 @@ return(p)
 + }
 > P
 
+
+
+ 
+for(i in 1:153){
+if(sum(is.na(airquality[i,]))>1)
+  {
+
+    new<-airquality[!is.na(airquality[i,]),]
+  
+  }
+}
+for(i in 1:153){
+  + kl<-c(sum(is.na(airquality[i,])))
+  + print(kl)
+  + }
+if(kl>1){
+  mydt<-airquality[!is.na(airquality[-kl,]),]
+}
+
+
