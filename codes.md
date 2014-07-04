@@ -27,3 +27,21 @@ return(p)
 4        h  5 NA  6  7
 5        t  6  5  7  8
 
+ 
+ 
+ airquality
+ summary(airquality$Ozone)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+   1.00   18.00   31.50   42.13   63.25  168.00      37 
+> is.na(airquality$Ozone)
+> floor(3.6)
+[1] 3
+> ceiling(3.6)
+[1] 4
+> sum(is.na(airquality$Ozone))
+[1] 37
+> if(sum(is.na(airquality$Ozone))>=30 & sum(is.na(airquality$Solar.R))>=30){
++ p<-airquality[!is.na(airquality$Ozone) & !is.na(airquality$Solar.R),]
++ }
+> P
+
