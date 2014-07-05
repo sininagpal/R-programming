@@ -28,7 +28,7 @@ return(p)
 5        t  6  5  7  8
 
  
- 
+ //for coloumns///
  airquality
  summary(airquality$Ozone)
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
@@ -47,21 +47,15 @@ return(p)
 
 
 
- 
+ ///for checking each row///
+ k<-c()
+p<-c()
 for(i in 1:153){
-if(sum(is.na(airquality[i,]))>1)
-  {
-
-    new<-airquality[!is.na(airquality[i,]),]
-  
+  k<-c(k,sum(is.na(airquality[i,])))
+  if(k[i]>1){
+    p<-c(p,i)
   }
 }
-for(i in 1:153){
-  + kl<-c(sum(is.na(airquality[i,])))
-  + print(kl)
-  + }
-if(kl>1){
-  mydt<-airquality[!is.na(airquality[-kl,]),]
-}
+  new<-airquality[-p,]
 
 
